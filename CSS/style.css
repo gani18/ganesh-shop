@@ -172,14 +172,14 @@ ul li a:hover{
                       color:white;
     }
 
-.productname,h3{
+.productName,h3{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      margin-top: 50px;
      margin-left: 50px;
      font-size: 25px;
 
 }
-.productimage{
+.productImage{
     width: 300px;
     height: 100px;
     margin-left: 100px;
@@ -188,12 +188,8 @@ ul li a:hover{
     footer ,h1{
   text-align: center;
     }
-    .sizeoptions{
-      padding: 30px;
-      margin: 30px;
-    }
   
-    .sizeoptions {
+    .sizeOptions {
       width: 200;
       padding: 16px 20px;
       border: none;
@@ -201,7 +197,7 @@ ul li a:hover{
       background-color: #f1f1f1;
       margin-left: 5px;
     }
-    .Quantity{
+    .quantity{
       width: 200;
       padding: 16px 20px;
       border: none;
@@ -226,7 +222,7 @@ ul li a:hover{
        text-decoration: none;
       
           } 
-          .checkouttitle,h3,p{
+          .checkoutTitle,h3,p{
          text-align: center;
          margin: 10px;
           }
