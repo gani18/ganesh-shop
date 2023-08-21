@@ -147,7 +147,7 @@ ul li a:hover{
         color:#424144;
         padding: 0 20px;
     }
-    .products .card .box{
+   .products .card .box{
            display: flex;
            justify-content: space-between;
            align-items: center;
