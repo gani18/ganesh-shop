@@ -6,124 +6,251 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shoping Store</title>
-    </head>
-
-    <style>
     
-        input[type="email"]{
-             width: 40%;
-             border: none;
-             border-bottom: 2px solid black;
-             margin-left: 100px;
-             margin-bottom: 20px;
-        } 
-        label[for]{
-            font-size: 20px;
-            margin-left: 100px;
-        }
-        input[type="text"]{
-            width: 40%;
-             border: none;
-             border-bottom: 2px solid black;
-             margin-left: 100px;
-        }
-        input[type="number"]{
-            width: 40%;
-             border: none;
-             border-bottom: 2px solid black;
-             margin-left: 100px;
-             margin-bottom: 20px;
-        }
-        h2{
-       margin-left: 100px;
-       margin-bottom: 10px;
-        }
-        lable[for="states"]{
-         margin-left: 100px;
-         margin:10px;
-        }
-       select{
-   border:none;
-   width: 40%;
- border-bottom: 2px solid black;
-  margin-left: 100px;
- margin-bottom: 20px;
- margin-top: 10px;
-       }
-       .footer{
-        width: 100%;
-       }
-       
-     
-    </style>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+        
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .check1 h4{
+                margin-top: 40px;
+                text-align: center;
+
+            }
+            .check1 p{
+                text-align: center;
+                font-size: 15px;
+            }
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+                height: 600px; 
+               
+            }
+            .column h4{
+                margin-top: 60px;
+            }
+            .column form{
+                display: flex;
+                flex-direction: column;
+                border: none;
+            }
+            label{
+                margin-bottom: 5px;
+            }
+            input{
+                border: none;
+                border-bottom: 2px solid black;
+                width:500px;
+                margin-bottom: 20px;
+            }
+            .column p{
+                margin-top: 10px;
+                text-align: left;
+            }
+            .code input{
+                
+                border: none;
+                border-bottom: 2px solid black;
+                width:150px;
+            }
+            .country {
+           border: none;
+           margin: 10px;
+           padding: 10px;
+           margin-right: 120px;
+            }
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                font-size: 15px;
+                margin-top: 10px;
+            }
+
+
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .check {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 15px;
+                width: 15px;
+                background-color: lightgray;
+                border-radius: 50%;
+            }
+
+            .container:hover input ~ .check {
+                background-color: gray;
+            }
+
+            .container input:checked ~ .check {
+                background-color: blue;
+            }
+
+            .check:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            .container input:checked ~ .check:after {
+                display: block;
+            }
+
+            .container .check:after {
+                top: 8px;
+                left: 8px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: white;
+            }
+            #expiry{
+              margin: 10px;
+              border: none;
+              border-bottom: 2px solid black;
+              padding: 10px;
+            }
+            #cvv{
+                border-bottom: 2px solid black;
+                
+            }
+            .placeorder{
+                 border:2px solid black;
+                 margin: 10px;
+                 padding: 5px;
+               
+            }
+           
+                    
+         
+           
+        </style>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
     <body>
         <div>
             <header>
-                <h1><a href="index.html">SHOP</a></h1> 
-                <h3>Checkout</h3>
-<p>Shop is a demo app - form data will not be sent </p>
+                <h3><a href="index.html">S H O P</a></h3>
+                <li class="cart"><a href="cartitems.html "><i class="fas fa-shopping-cart"></i></a></li>
             </header>
-            </div>
-        <div class="Shipping">  
-       <form>
-        <div class="accountInformation">
-          <label for="mail">Account information</label><br>
-          <input type="email" id="Email"   name="mail"><br><br>
-          <label for="Number">Phone Number</label><br>
-          <input type="number" id="Number" name="number"><br><br>
-          <h2>Shipping Address</h2>
-          <label for="text">Address</label><br>
-          <input type="text"  id="Address"name="text"><br><br>
-          <label for="text">City</label><br>
-          <input type="text" id="text" name="text"><br><br>
-          <label for="text">State/Province</label><br>
-          <input type="text" id="text" name="text"><br><br>
-          <label for="text">Zip/PostalCode</label><br>
-          <input type="text"id="text" name="text"><br>
-          
-            <label for="states">Country</label><br>
-          <select name="states">
-            <option value="india">India</option>
-            <option value="Canada">Canada</option> 
-            <option value="Austrila">Austrila</option>
-           
-          </select>
-        </div>>
-        <div class="PaymentDetails">
-            <h2>Payment Details</h2>
-            <label for="text">Cardholder Name</label><br><br>
-            <input type="text" name="text"><br><br>
-            <label for="number">Card Number</label><br><br>
-            <input type="number" name="number"><br><br>
-            <label for="states">Expiry</label><br>
-            <select name="states">
-             <option value="jan">jan</option>
-             <option value="feb">feb</option>
-             <option value="march">march</option>
-             <option value="april">april</option>
-             <option value="may">may</option>
-             <option value="june">june</option>
-            </select>
-            <label for="states"></label>
-                <select name="states">
-                    <option value="2023">2023</option>
-                    <option value="2023">2024</option>
-                    <option value="2023">2025</option>
-                    <option value="2023">2026</option>
-                    <option value="2023">2027</option>
-                    <option value="2023">2028</option>
-                    <option value="2023">2029</option>
-                    <option value="2023">2030</option>
-                </select>
-               
-         </form>
-         </div>
         </div>
-       
-        </footer>
-            </body>
-            </html>
+        <div class="check1">
+            <h4>Checkout</h4>
+            <p>Shop is a demo app - form data will not be sent</p>
+        </div>
+        <div class="row">
+            <div class="column" >
+                <h4>Account Information</h4>
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                    
+                    <label for="Phone Number">Phone Number</label>
+                    <input type="number" id="Phone Number" name="Phone Number" />
+                    <p><b>Shipping Address</b></p>
+                    <label for="Address">Address</label>
+                    <input type="textarea" id="Address" name="Address" />
+                    <label for="City">City</label>
+                    <input type="text" id="City" name="City" />
+                    <div class="code">
+                        <label for="State">State</label><br>
+                        <input type="text" id="State" name="State" />
+                        <label for="Postal Code">Postal Code</label>
+                        <input type="text" id="Postal Code" name="Postal Code" />
+                    </div>
+                    <label for="country" >Country</label>
+                    <select class="country" name="country">
+                        <option value="India">India</option>
+                        <option value="canada">canada</option>
+                        <option value="england">England</option>
+                        <option value="aus">Aus</option>
+                    </select>
+                    <h4 style="margin-top: 20px;">Billing Address</h4>
+                <label class="container">Use different billing address
+                    <input type="checkbox" name="radio" checked>
+                    <span class="check"></span>
+                </label>
+                    
+                </form>              
+            </div>      
+            <div class="column" >
+                <h4>Payment Method</h4>
+                <form action="">
+                    <label for="Cardholder Name">Cardholder Name</label>
+                    <input type="text" id="Cardholder Name" name="Cardholder Name" />
+                    <label for="Card Number">Card Number</label>
+                    <input type="number" id="Card Number" name="Card Number" />
+
+                     <div>
+                    <label for="expiry">Expiry</label>
+                    <select name="expiry" id="expiry">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+
+                    </select>
+
+                   
+                    <select for="expiry" id="expiry">
+                     <option value="2020">2020</option>
+                     <option value="2021">2021</option>
+                     <option value="2022">2022</option>
+                     <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                     <option value="2025">2025</option>
+                     <option value="2026">2026</option>
+                     <option value="2027">2027</option>
+                    </select><br><br>
+                    <label for="CVV">CVV</label><br>
+                    <input type="number" id="cvv" name="CVV" />
+                    </div>
+
+                    <div>
+                        <h4>Order Summary</h4>
+                        <p>Total</p>
+
+                        <button class="placeorder">PLACE ORDER</button>
+                        
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+    <footer>
+    
+        <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" target="_blank">Made by polymer</a></p>
+        <h4>Demo Only</h4>
+    
+    </footer>
+
+    </body>
+ </html>

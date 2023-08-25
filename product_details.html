@@ -1,60 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-comatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>Shoping Store</title>
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/responsive.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<body>
-    <div>
-        <header>
-            <h1><a href="index.html">SHOP</a></h1>
-        </header>
-        <nav class="container">
-            <ul>
-                <li class="current"><a href="mens_wear.html">Menswear</a></li>
-                <li><a href="ladies_wear.html">Ladies wear</a></li>
-                <li><a href="kids_wear.html">Kids wear</a></li>
-                <li><a href="mens_t_shirts.html">Mens T shirt</a></li>
-            </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-comatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Shoping Store</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+                height: 700px; 
+            }
+            .column img{
+                width: 600px;
+                height: 600px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            #sizeselect{
+              border: none;
+              font-size: 20px;
+              border-bottom: 1px solid black;
+              width: 550px;
+              margin-top: 10px;
+             
+            }
+            .sizelabel{
+              font-size: 20px;
+              
+            }
+            .Quantitylabel{
+                   font-size: 20px;
+            }
+            #Quantityselect{
+                border: none;
+              font-size: 20px;
+              border-bottom: 1px solid black;
+              width: 550px;
+              margin-top: 10px;
+            }
+            h2{
+               margin: 20px;
+            }
+            .checkout{
+               border:2px solid black;
+               margin: 30px;
+               background-color: white;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <h3><a href="index.html">S H O P</a></h3>
+            </header>
+            <nav class="container">
+                <ul>
+                    <li class="current"><a href="mens_wear.html">Menswear</a></li>
+                    <li><a href="ladies_wear.html">Ladies wear</a></li>
+                    <li><a href="men's_T-shirt">Kids wear</a></li>
+                    <li><a href="ladies _T_shirts.html">Mens T shirt</a></li>
+                </ul>
             </nav>
+            <div class="row">
+                <div class="column" >
+                <img src="img/mens wear items/img10.jpg" alt="men in a jacket">
+                </div>
+                <div class="column">
+                    <h1>Anvil L/S Crew Neck - Grey</h1>
+                    <div class="price">$22.15</div>
+                    <option value="XS">XS</option>
+                    <label class="sizelabel">Size</label><br>
+                    <select id="sizeselect" aria-labelledby="sizelabel">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+  
+                    <label class="Quantitylabel">Quantity</label><br>
+                    <select id="Quantityselect" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    
+                    <h2>Description</h2>
+                     <ul>
+                  <li>  You'll be swooning over this crew neck as soon as you feel how soft it is.</li>
+                    </ul>
+                    <h2>Features:</h2>
+                    <ul>
+                   <li> 40% preshrunk ring-spun cotton, 60% polyester terry fleece.</li>
+                   <li>  Available in dark heather charcoal with the white Google logo<br> screen printed across center chest</li>
+                  </ul>
 
-           <div>
-            <div class="productName"> 
-                <h2>Mens white shirt</h2>
-                 <h4>$50</h4> 
+                  <button class="checkout"><a href="checkout.html">CHECKOUT</a></button>
+                </div>
             </div>
-              <label for="size">Size</label>
-             <select class="sizeOptions" name="size">
-                
-                <option value="32">32</option>
-                <option value="36">36</option>
-                <option value="40">40</option>
-                <option value="42">42</option>
-                <option value="44">44</option>
-             </select>
-
-             <label for="Quantity">Quantity</label>
-             <select  class="quantity" name="Quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-
-          
-             </select>
-            </div>
-           
-           <div class="productImage">
-            <img src="img/mens wear items/img10.jpg" alt="">
-        </div>
-<div class="checkout">
-
-      <button><a href="checkout.html">Checkout</a></button>
-       </div>
-       
+            
+            
+        
+            <footer>
+            
+                <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" target="_blank">Made by polymer</a></p>
+                <h4>Demo Only</h4>
+            
+            </footer>
+            
+        
            </body>
             </html> 
