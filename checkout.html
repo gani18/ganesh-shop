@@ -1,489 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-comatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shoping Store</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-comatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Store</title>
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
-        <style>
-        
-            *{
-                padding: 0px;
-                margin: 0px;
-                box-sizing: border-box;
-            }
-            h3 {
-                font-family: Arial, Helvetica, sans-serif;
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
 
-            }
-            .check1 h4{
-                margin-top: 40px;
-                text-align: center;
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-            }
-            .check1 p{
-                text-align: center;
-                font-size: 15px;
-            }
-            .column {
-                float: left;
-                width: 50%;
-                padding: 10px;
-                height: 600px; 
-               
-            }
-            .column h4{
-                margin-top: 60px;
-            }
-            .column form{
-                display: flex;
-                flex-direction: column;
-                border: none;
-            }
-            label{
-                margin-bottom: 5px;
-            }
-            input{
-                border: none;
-                border-bottom: 2px solid black;
-                width:500px;
-                margin-bottom: 20px;
-            }
-            .column p{
-                margin-top: 10px;
-                text-align: left;
-            }
-            .code input{
-                
-                border: none;
-                border-bottom: 2px solid black;
-                width:150px;
-            }
-            .country {
-           border: none;
-           margin: 10px;
-           padding: 10px;
-           margin-right: 120px;
-            }
-            .container {
-                display: block;
-                position: relative;
-                padding-left: 40px;
-                margin-bottom: 20px;
-                cursor: pointer;
-                font-size: 15px;
-                margin-top: 10px;
-            }
+    .check1 h4 {
+        margin-top: 40px;
+        text-align: center;
+    }
 
+    .check1 p {
+        text-align: center;
+        font-size: 15px;
+    }
 
-            .container input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-            }
-            .check {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 15px;
-                width: 15px;
-                background-color: lightgray;
-                border-radius: 50%;
-            }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 600px;
+    }
 
-            .container:hover input ~ .check {
-                background-color: gray;
-            }
+    .column h4 {
+        margin-top: 60px;
+    }
 
-            .container input:checked ~ .check {
-                background-color: blue;
-            }
+    .column form {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
 
-            .check:after {
-                content: "";
-                position: absolute;
-                display: none;
-            }
+    label {
+        margin-bottom: 5px;
+    }
 
-            .container input:checked ~ .check:after {
-                display: block;
-            }
+    input {
+        border: none;
+        border-bottom: 2px solid black;
+        width: 500px;
+        margin-bottom: 20px;
+    }
 
-            .container .check:after {
-                top: 8px;
-                left: 8px;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: white;
-            }
-            #expiry{
-              margin: 10px;
-              border: none;
-              border-bottom: 2px solid black;
-              padding: 10px;
-            }
-            #cvv{
-                border-bottom: 2px solid black;
-                
-            }
-            .placeorder{
-                 border:2px solid black;
-                 margin: 10px;
-                 padding: 5px;
-               
-            }
+    .column p {
+        margin-top: 10px;
+        text-align: left;
+    }
 
-          @media all and (max-width: 480px){
-                    
-                   *{
-                padding: 0px;
-                margin: 0px;
-                box-sizing: border-box;
-            }
-            h3 {
-                font-family: Arial, Helvetica, sans-serif;
+    .code input {
+        border: none;
+        border-bottom: 2px solid black;
+        width: 150px;
+    }
 
-            }
-            .check1 h4{
-                margin-top: 40px;
-                text-align: center;
+    .country {
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        margin-right: 120px;
+    }
 
-            }
-            .check1 p{
-                text-align: center;
-                font-size: 15px;
-            }
-            .column {
-                 float: left;
-                width: 200px;
-                padding: 10px;
-                height: 300px;
-                margin: 10px;
-               
-            }
-            .column h4{
-                margin-top: 60px;
-            }
-             .column form{
-                display: flex;
-             
-                flex-direction: column;
-                border: none;
-            } 
-            label{
-                margin-bottom: 5px;
-            }
-            input{
-                border: none;
-                border-bottom: 2px solid black;
-                width:150px;
-                margin-bottom: 10px;
-            }
-            .column p{
-                margin-top: 10px;
-                text-align: left;
-            }
-            .code input{
-                
-                border: none;
-                border-bottom: 2px solid black;
-                width:150px;
-            }
-            .country {
-           border: none;
-           margin: 10px;
-           padding: 10px;
-        
-            }
-            .container {
-                display: block;
-                position: relative;
-                padding-left: 40px;
-                margin-bottom: 20px;
-                cursor: pointer;
-                font-size: 15px;
-                margin-top: 10px;
-            }
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 10px;
+    }
 
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
 
-            .container input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-            }
-            .check {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 15px;
-                width: 15px;
-                background-color: lightgray;
-                border-radius: 50%;
-            }
+    .check {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-color: lightgray;
+        border-radius: 50%;
+    }
 
-            .container:hover input ~ .check {
-                background-color: gray;
-            }
+    .container:hover input~.check {
+        background-color: gray;
+    }
 
-            .container input:checked ~ .check {
-                background-color: blue;
-            }
+    .container input:checked~.check {
+        background-color: blue;
+    }
 
-            .check:after {
-                content: "";
-                position: absolute;
-                display: none;
-            }
+    .check:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
 
-            .container input:checked ~ .check:after {
-                display: block;
-            }
+    .container input:checked~.check:after {
+        display: block;
+    }
 
-            .container .check:after {
-                top: 8px;
-                left: 8px;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: white;
-            }
-            .expiry{
-                margin:70px
-            }
-            #expiry{
-              margin: 10px;
-              border: none;
-              border-bottom: 2px solid black;
-           
-            }
-            #cvv{
-                border-bottom: 2px solid black;
-                
-            }
-            .placeorder{
-                 border:2px solid black;
-                 margin: 10px;
-                 padding: 5px;
-               
-            }
+    .container .check:after {
+        top: 8px;
+        left: 8px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: white;
+    }
 
+    #expiry {
+        margin: 10px;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px;
+    }
 
-          }
-           
+    #cvv {
+        border-bottom: 2px solid black;
+    }
 
-          @media all and (min-width: 480px) and (max-width: 900px)
-          {
-           
+    .placeorder {
+        border: 2px solid black;
+        margin: 10px;
+        padding: 5px;
+    }
 
-                  
-                   *{
-                padding: 0px;
-                margin: 20px;
-                box-sizing: border-box;
-            }
-            h3 {
-                font-family: Arial, Helvetica, sans-serif;
+    @media all and (max-width: 480px) {
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
 
-            }
-            .check1 h4{
-                margin-top: 40px;
-                text-align: center;
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-            }
-            .check1 p{
-                text-align: center;
-                font-size: 15px;
-            }
-            .column {
-                 float: left;
-                width: 200px;
-                padding: 10px;
-                height: 300px;
-                margin: 50px;
+        .check1 h4 {
+            margin-top: 40px;
+            text-align: center;
+        }
 
-               
-            }
-            .column h4{
-                margin-top: 60px;
-            }
-             .column form{
-                display: flex;
-             
-                flex-direction: column;
-                border: none;
-            } 
-            label{
-                margin-bottom: 5px;
-            }
-            input{
-                border: none;
-                border-bottom: 2px solid black;
-                width:200px;
-                margin-bottom: 10px;
-                
-            }
-            .column p{
-                margin-top: 10px;
-                text-align: left;
-            }
-            .code input{
-                
-                border: none;
-                border-bottom: 2px solid black;
-                width:150px;
-            }
-            .country {
-           border: none;
-           margin: 10px;
-           padding: 10px;
-        
-            }
-            .container {
-                display: block;
-                position: relative;
-                padding-left: 40px;
-                margin-bottom: 20px;
-                cursor: pointer;
-                font-size: 15px;
-                margin-top: 10px;
-            }
+        .check1 p {
+            text-align: center;
+            font-size: 15px;
+        }
 
+        .column {
+            float: left;
+            width: 200px;
+            padding: 10px;
+            height: 300px;
+            margin: 10px;
+        }
 
-            .container input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-            }
-            .check {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 15px;
-                width: 15px;
-                background-color: lightgray;
-                border-radius: 50%;
-            }
+        .column h4 {
+            margin-top: 60px;
+        }
 
-            .container:hover input ~ .check {
-                background-color: gray;
-            }
+        .column form {
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
 
-            .container input:checked ~ .check {
-                background-color: blue;
-            }
+        label {
+            margin-bottom: 5px;
+        }
 
-            .check:after {
-                content: "";
-                position: absolute;
-                display: none;
-            }
+        input {
+            border: none;
+            border-bottom: 2px solid black;
+            width: 150px;
+            margin-bottom: 10px;
+        }
 
-            .container input:checked ~ .check:after {
-                display: block;
-            }
+        .column p {
+            margin-top: 10px;
+            text-align: left;
+        }
 
-            .container .check:after {
-                top: 8px;
-                left: 8px;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: white;
-            }
-            .expiry{
-                margin:70px
-            }
-            #expiry{
-              margin: 10px;
-              border: none;
-              border-bottom: 2px solid black;
-           
-            }
-            #cvv{
-                border-bottom: 2px solid black;
-                
-            }
-            .placeorder{
-                 border:2px solid black;
-                 margin: 10px;
-                 padding: 5px;
-               
-            }
-            footer{
-                  margin-top: 620px;
-                  margin-right: 200px;
-            }
+        .code input {
+            border: none;
+            border-bottom: 2px solid black;
+            width: 150px;
+        }
 
+        .country {
+            border: none;
+            margin: 10px;
+            padding: 10px;
+        }
 
-          }
-                    
-         
-           
-        </style>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/responsive.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <div>
-            <header>
-                <h3><a href="index.html">S H O P</a></h3>
-                <li class="cart"><a href="cartitems.html "><i class="fas fa-shopping-cart"></i></a></li>
-            </header>
-        </div>
-        <div class="check1">
-            <h4>Checkout</h4>
-            <p>Shop is a demo app - form data will not be sent</p>
-        </div>
-        <div class="row">
-            <div class="column" >
-                <h4>Account Information</h4>
-                <form action="">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" />
-                    
-                    <label for="Phone Number">Phone Number</label>
-                    <input type="number" id="Phone Number" name="Phone Number" />
-                    <p><b>Shipping Address</b></p>
-                    <label for="Address">Address</label>
-                    <input type="textarea" id="Address" name="Address" />
-                    <label for="City">City</label>
-                    <input type="text" id="City" name="City" />
-                    <div class="code">
-                        <label for="State">State</label><br>
-                        <input type="text" id="State" name="State" />
-                        <label for="Postal Code">Postal Code</label>
-                        <input type="text" id="Postal Code" name="Postal Code" />
-                    </div>
-                    <label for="country">Country</label>
-                    <select class="country" name="country">
-                        <option value="India" name="country">India</option>
-                        <option value="canada" name="country">canada</option>
-                        <option value="england" name="country">England</option>
-                        <option value="aus" name="country">Aus</option>
-                    </select>
-                    <h4 style="margin-top: 20px;">Billing Address</h4>
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .check {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: lightgray;
+            border-radius: 50%;
+        }
+
+        .container:hover input~.check {
+            background-color: gray;
+        }
+
+        .container input:checked~.check {
+            background-color: blue;
+        }
+
+        .check:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .container input:checked~.check:after {
+            display: block;
+        }
+
+        .container .check:after {
+            top: 8px;
+            left: 8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .expiry {
+            margin: 70px
+        }
+
+        #expiry {
+            margin: 10px;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+        #cvv {
+            border-bottom: 2px solid black;
+        }
+
+        .placeorder {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+
+    @media all and (min-width: 480px) and (max-width: 900px) {
+        * {
+            padding: 0px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .check1 h4 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .check1 p {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .column {
+            float: left;
+            width: 200px;
+            padding: 10px;
+            height: 300px;
+            margin: 50px;
+        }
+
+        .column h4 {
+            margin-top: 60px;
+        }
+
+        .column form {
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input {
+            border: none;
+            border-bottom: 2px solid black;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .column p {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .code input {
+            border: none;
+            border-bottom: 2px solid black;
+            width: 150px;
+        }
+
+        .country {
+            border: none;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .check {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: lightgray;
+            border-radius: 50%;
+        }
+
+        .container:hover input~.check {
+            background-color: gray;
+        }
+
+        .container input:checked~.check {
+            background-color: blue;
+        }
+
+        .check:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .container input:checked~.check:after {
+            display: block;
+        }
+
+        .container .check:after {
+            top: 8px;
+            left: 8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .expiry {
+            margin: 70px
+        }
+
+        #expiry {
+            margin: 10px;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+        #cvv {
+            border-bottom: 2px solid black;
+        }
+
+        .placeorder {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        footer {
+            margin-top: 620px;
+            margin-right: 200px;
+        }
+    }
+</style>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div>
+        <header>
+            <h3><a href="index.html">S H O P</a></h3>
+            <li class="cart"><a href="cartitems.html "><i class="fas fa-shopping-cart"></i></a></li>
+        </header>
+    </div>
+    <div class="check1">
+        <h4>Checkout</h4>
+        <p>Shop is a demo app - form data will not be sent</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h4>Account Information</h4>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+                <label for="Phone Number">Phone Number</label>
+                <input type="number" id="Phone Number" name="Phone Number" />
+                <p><b>Shipping Address</b></p>
+                <label for="Address">Address</label>
+                <input type="textarea" id="Address" name="Address" />
+                <label for="City">City</label>
+                <input type="text" id="City" name="City" />
+                <div class="code">
+                    <label for="State">State</label><br>
+                    <input type="text" id="State" name="State" />
+                    <label for="Postal Code">Postal Code</label>
+                    <input type="text" id="Postal Code" name="Postal Code" />
+                </div>
+                <label for="country">Country</label>
+                <select class="country" name="country">
+                    <option value="India" name="country">India</option>
+                    <option value="canada" name="country">canada</option>
+                    <option value="england" name="country">England</option>
+                    <option value="aus" name="country">Aus</option>
+                </select>
+                <h4 style="margin-top: 20px;">Billing Address</h4>
                 <label class="container">Use different billing address
                     <input type="checkbox" name="radio" checked>
                     <span class="check"></span>
                 </label>
-                    
-                </form>              
-            </div>      
-            <div class="column" >
-                <h4>Payment Method</h4>
-                <form action="">
-                    <label for="Cardholder Name">Cardholder Name</label>
-                    <input type="text" id="Cardholder Name" name="Cardholder Name" />
-                    <label for="Card Number">Card Number</label>
-                    <input type="number" id="Card Number" name="Card Number" />
-
-                     <div>
+            </form>
+        </div>
+        <div class="column">
+            <h4>Payment Method</h4>
+            <form action="">
+                <label for="Cardholder Name">Cardholder Name</label>
+                <input type="text" id="Cardholder Name" name="Cardholder Name" />
+                <label for="Card Number">Card Number</label>
+                <input type="number" id="Card Number" name="Card Number" />
+                <div>
                     <label for="expiry" class="expiry">Expiry</label>
                     <select name="expiry" id="expiry">
                         <option value="Jan">Jan</option>
@@ -498,42 +509,33 @@
                         <option value="Oct">Oct</option>
                         <option value="Nov">Nov</option>
                         <option value="Dec">Dec</option>
-
                     </select>
-
-                   
                     <select for="expiry" id="expiry">
-                     <option value="2020">2020</option>
-                     <option value="2021">2021</option>
-                     <option value="2022">2022</option>
-                     <option value="2023">2023</option>
-                     <option value="2024">2024</option>
-                     <option value="2025">2025</option>
-                     <option value="2026">2026</option>
-                     <option value="2027">2027</option>
-                    </select><br><br>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                    </select>
+                    <br><br>
                     <label for="cvv">CVV</label><br>
                     <input type="number" id="cvv" name="cvv" />
-                    </div>
-
-                    <div>
-                        <h4>Order Summary</h4>
-                        <p>Total</p>
-
-                        <button class="placeorder">PLACE ORDER</button>
-                        
-                    </div>
-                </form>
-                
-            </div>
+                </div>
+                <div>
+                    <h4>Order Summary</h4>
+                    <p>Total</p>
+                    <button class="placeorder">PLACE ORDER</button>
+                </div>
+            </form>
         </div>
-
+    </div>
     <footer>
-    
-        <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" >Made by polymer</a></p>
+        <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/">Made by polymer</a></p>
         <h4>Demo Only</h4>
-    
     </footer>
+</body>
 
-    </body>
- </html>
+</html>
