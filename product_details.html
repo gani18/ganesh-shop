@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./css/responsive.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+        </head>
         <style>
             * {
                 box-sizing: border-box;
@@ -43,6 +43,7 @@
             }
             .Quantitylabel{
                    font-size: 20px;
+                   margin-top: 10px;
             }
             #Quantityselect{
                 border: none;
@@ -54,63 +55,280 @@
             h2{
                margin: 20px;
             }
-            .checkout{
+            .checkout1{
                border:2px solid black;
                margin: 30px;
                background-color: white;
+               padding: 10px;
                
             }
+
+              @media all and (min-width: 480px) and (max-width: 780px)
+              {
+
+
+                    .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+                   .column {
+                float: left;
+                width: 50px;
+                padding: 10px;
+                height: 700px; 
+            }
+            .column img{
+                width: 300px;
+                height: 300px;
+                margin-left: 150px;
+                margin-top: 90px;
+            }
+           .column1 {
+                font-size: 20px;
+                text-align: justify;
+                 
+            
+            }
+            .price{
+                  font-size: 20px;
+            }
+            .checkout1{
+        
+            text-align: center;
+            font-size: 30px;
+            margin-left: 200px;
+            
+
+              
+            }
+
+
+              #sizeselect{
+              border: none;
+              font-size: 20px;
+              border-bottom: 1px solid black;
+              width: 500px;
+              margin-top: 290px;
+             
+            }
+            .sizelabel{
+              font-size: 20px;
+              position: absolute;
+              margin-top: 275px;
+              
+            }
+            .Quantitylabel{
+                   font-size: 20px;
+                   position: absolute;
+                   margin-top: 80px;
+                   
+            }
+            #Quantityselect{
+                border: none;
+              font-size: 20px;
+              border-bottom: 1px solid black;
+              width: 500px;
+              margin-top: 80px;
+              
+            }
+            h2 {
+             margin: 10px;
+              font-size: 20px;
+            }
+          
+           
+          .p{
+              margin-top: 100px;
+            }
+            .description ul li{
+                        
+             display: inline-flex;
+             flex-wrap:wrap ;
+             font-size: 20px;
+             margin-top: 80PX;
+             margin-bottom: 50PX;
+             margin-left: 10px;
+            
+             
+            
+            }
+          .features,ul,li{
+             margin-right: 30px;
+          }
+         
+          
+              }
+
+
+              @media all and (max-width: 480px){
+                  
+                   .column {
+                float: left;
+                width: 50px;
+                padding: 10px;
+                height: 700px; 
+            }
+           
+            .column img{
+                width: 300px;
+                height: 300px;
+                margin-left: 100px;
+                margin-top: 25px;
+            }
+           .column {
+                font-size: 5px;
+                text-align: justify;
+                display: inline;
+                 
+            
+            }
+            .price{
+                  font-size: 15px;
+                 margin-bottom: 10px;
+                  margin-right: 15px;
+            }
+            .checkout1,button{
+        
+            text-align: center;
+            font-size: 20px;
+            
+            
+
+              
+            }
+
+
+              #sizeselect{
+              border: none;
+              font-size: 20px;
+              border-bottom: 1px solid black;
+              width: 350px;
+              margin-top: 295px;
+              padding: 5px;
+             
+            }
+            .sizelabel{
+              font-size: 20px;
+              position: absolute;
+              margin-top: 285px;
+              margin-right: 200px;
+            
+              
+            }
+            .Quantitylabel{
+                   font-size: 20px;
+                   position: absolute;
+                   margin-top: 17px;
+                   
+                   
+            }
+            #Quantityselect{
+                border: none;
+              font-size: 20px;
+              border-bottom: 1px solid black;
+              width: 350px;
+              margin-top: 17px;
+              padding: 5px;
+              
+            }
+            h2 {
+             display: none;
+            }
+          
+           
+          footer,.p,{
+              margin-top: 100px;
+
+            }
+
+            .description ,.point,li{
+                display: none;
+              
+            }
+         .column1,h1 {
+               font-size: 20px;
+               margin-top: 10px;
+               margin-left: 55px;
+         }
+         
+          
+              }
+
+
+              
         </style>
     </head>
     <body>
-        <div>
-            <header>
-                <h3><a href="index.html">S H O P</a></h3>
-            </header>
-            <nav class="container">
+    <div>
+        <header>
+            <h3><a href="index.html">S H O P</a></h3>
+            <li class="cart"><a href="cartitems.html "><i class="fas fa-shopping-cart"></i></a></li>
+        </header>
+        <nav class="container">
+            <div class="links">
                 <ul>
-                    <li class="current"><a href="mens_wear.html">Menswear</a></li>
+                    <li class="current"><a href="mens_wear.html">Men's wear</a></li>
                     <li><a href="ladies_wear.html">Ladies wear</a></li>
-                    <li><a href="men's_T-shirt">Kids wear</a></li>
-                    <li><a href="ladies _T_shirts.html">Mens T shirt</a></li>
+                    <li><a href="mens_T_shirt.html">Men's T-Shirts</a></li>
+                    <li><a href="ladies_T_shirt.html">Ladies T-Shirts</a></li>
                 </ul>
-            </nav>
-            <div class="row">
+                <div id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="current"><a href="mens_wear.html">Men's wear</a></li>
+                <li><a href="ladies_wear.html">Ladies wear</a></li>
+                <li><a href="mens_T_shirt.html">Men's T-Shirts</a></li>
+                <li><a href="ladies_T_shirt.html">Ladies T-Shirts</a></li>
+            </ul>
+        </div>   
+        
+        
+        <div class="row">
                 <div class="column" >
                 <img src="img/mens wear items/img10.jpg" alt="men in a jacket">
                 </div>
-                <div class="column">
+                <div class="column1">
                     <h1>Anvil L/S Crew Neck - Grey</h1>
                     <div class="price">$22.15</div>
-                    <option value="XS">XS</option>
-                    <label class="sizelabel">Size</label><br>
-                    <select id="sizeselect" aria-labelledby="sizelabel">
+                  
+
+                    <label class="sizelabel" for="select">Size</label><br>
+                    <select id="sizeselect" name="selectselect" aria-labelledby="sizelabel">
                         <option value="S">S</option>
                         <option value="M">M</option>
                         <option value="L">L</option>
                         <option value="XL">XL</option>
-                    </select>
+                    </select><br>
   
-                    <label class="Quantitylabel">Quantity</label><br>
-                    <select id="Quantityselect" >
+                    <label class="Quantitylabel" for="Quantityselect">Quantity</label><br>
+                    <br>
+                    <select id="Quantityselect" name="Quantityselect" >
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    
+                    <div class="description">
                     <h2>Description</h2>
-                     <ul>
+                     <ul class="point">
                   <li>  You'll be swooning over this crew neck as soon as you feel how soft it is.</li>
                     </ul>
+                    </div>
+                    <div class="features">
                     <h2>Features:</h2>
                     <ul>
                    <li> 40% preshrunk ring-spun cotton, 60% polyester terry fleece.</li>
                    <li>  Available in dark heather charcoal with the white Google logo<br> screen printed across center chest</li>
                   </ul>
-
-                  <button class="checkout"><a href="checkout.html">CHECKOUT</a></button>
+                   </div>
+                  <button class="checkout1"><a href="checkout.html">CHECKOUT</a></button>
                 </div>
             </div>
             
@@ -118,7 +336,7 @@
         
             <footer>
             
-                <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" target="_blank">Made by polymer</a></p>
+                <p class="p"><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" target="_blank">Made by polymer</a></p>
                 <h4>Demo Only</h4>
             
             </footer>

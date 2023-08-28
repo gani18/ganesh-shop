@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-comatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-<head>
-    <title>Men's wear-SHOP</title>
+
+    <title>Home-SHOP</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="">
 </head>
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/responsive.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <body>
     <div>
         <header>
             <h3><a href="index.html">S H O P</a></h3>
+            <li class="cart"><a href="cartitems.html "><i class="fas fa-shopping-cart"></i></a></li>
         </header>
         <nav class="container">
+            <div class="links">
+                <ul>
+                    <li class="current"><a href="mens_wear.html">Men's wear</a></li>
+                    <li><a href="ladies_wear.html">Ladies wear</a></li>
+                    <li><a href="mens_T_shirt.html">Men's T-Shirts</a></li>
+                    <li><a href="ladies_T_shirt.html">Ladies T-Shirts</a></li>
+                </ul>
+                <div id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
             <ul>
                 <li class="current"><a href="mens_wear.html">Men's wear</a></li>
                 <li><a href="ladies_wear.html">Ladies wear</a></li>
                 <li><a href="mens_T_shirt.html">Men's T-Shirts</a></li>
                 <li><a href="ladies_T_shirt.html">Ladies T-Shirts</a></li>
             </ul>
-        </nav>
+        </div>
         <div class="img">
-            <img  src="img/index img/img1.jpg"/>
+            <img  src="img/index img/img1.jpg" alt="ga"/>
         </div>
    
        
@@ -32,7 +56,7 @@
         
         <div class="nitems">
             <div class="header">
-            <h3>Men's wear </h3>
+            <h4>Men's wear </h4>
              <p>(20 items)</p>
              </div>
         </div>
@@ -294,7 +318,7 @@
    </div>
 <footer>
 
-    <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" target="_blank">Made by polymer</a></p>
+    <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/">Made by polymer</a></p>
     <h4>Demo Only</h4>
 
 </footer>

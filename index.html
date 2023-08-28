@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-comatible" content="IE=edge">
+    
     <title>Home-SHOP</title>
-
-        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="scripts/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="">
 </head>
 
 <body>
@@ -25,49 +27,57 @@
             <li class="cart"><a href="cartitems.html "><i class="fas fa-shopping-cart"></i></a></li>
         </header>
         <nav class="container">
+            <div class="links">
+                <ul>
+                    <li class="current"><a href="mens_wear.html">Men's wear</a></li>
+                    <li><a href="ladies_wear.html">Ladies wear</a></li>
+                    <li><a href="mens_T_shirt.html">Men's T-Shirts</a></li>
+                    <li><a href="ladies_T_shirt.html">Ladies T-Shirts</a></li>
+                    </ul>
+                    <div id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
             <ul>
                 <li class="current"><a href="mens_wear.html">Men's wear</a></li>
                 <li><a href="ladies_wear.html">Ladies wear</a></li>
                 <li><a href="mens_T_shirt.html">Men's T-Shirts</a></li>
                 <li><a href="ladies_T_shirt.html">Ladies T-Shirts</a></li>
-
-
             </ul>
-        </nav>
+        </div>
         <div class="img">
             <img src="img/index img/img1.jpg" />
         </div>
     </div>
     <div class="text">
         <h4>Men's wear</h4>
-        <button class="button"><a href="mens_wear.html">Shop Now</a></button>
+        <button class="button"><a href="mens_wear.html">SHOP NOW</a></button>
     </div>
     <div class="img2">
         <img src="img/index img/img2.jpg" />
     </div>
     <div class="text">
         <h4>Ladies wear</h4>
-        <button class="button"><a href="ladies_wear.html">Shop Now</a></button>
+        <button class="button"><a href="ladies_wear.html">SHOP NOW</a></button>
     </div>
     <div class="flex">
         <div class="img4">
             <img src="img/index img/img3.jpg" />
             <h4 class="kidswear">Men's T-Shirts</h4>
-            <button class="button"><a href="mens_T_shirt.html">Shop Now</a></button>
+            <button class="button"><a href="mens_T_shirt.html">SHOP NOW</a></button>
         </div>
         <div class="img6">
             <img src="img/index img/img4.jpg" />
             <h4>Ladies T-Shirts</h4>
-            <button class="button"><a href="ladies_T_shirt.html">Shop Now</a></button>
+            <button class="button"><a href="ladies_T_shirt.html">SHOP NOW</a></button>
         </div>
     </div>
-
     </div>
     <footer>
-    
         <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" target="_blank">Made by polymer</a></p>
         <h4>Demo Only</h4>
-    
     </footer>
 </body>
 

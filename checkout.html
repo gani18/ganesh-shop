@@ -6,8 +6,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shoping Store</title>
-    
-
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
         <style>
         
             *{
@@ -136,7 +136,290 @@
                  padding: 5px;
                
             }
+
+          @media all and (max-width: 480px){
+                    
+                   *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .check1 h4{
+                margin-top: 40px;
+                text-align: center;
+
+            }
+            .check1 p{
+                text-align: center;
+                font-size: 15px;
+            }
+            .column {
+                 float: left;
+                width: 200px;
+                padding: 10px;
+                height: 300px;
+                margin: 10px;
+               
+            }
+            .column h4{
+                margin-top: 60px;
+            }
+             .column form{
+                display: flex;
+             
+                flex-direction: column;
+                border: none;
+            } 
+            label{
+                margin-bottom: 5px;
+            }
+            input{
+                border: none;
+                border-bottom: 2px solid black;
+                width:150px;
+                margin-bottom: 10px;
+            }
+            .column p{
+                margin-top: 10px;
+                text-align: left;
+            }
+            .code input{
+                
+                border: none;
+                border-bottom: 2px solid black;
+                width:150px;
+            }
+            .country {
+           border: none;
+           margin: 10px;
+           padding: 10px;
+        
+            }
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                font-size: 15px;
+                margin-top: 10px;
+            }
+
+
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .check {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 15px;
+                width: 15px;
+                background-color: lightgray;
+                border-radius: 50%;
+            }
+
+            .container:hover input ~ .check {
+                background-color: gray;
+            }
+
+            .container input:checked ~ .check {
+                background-color: blue;
+            }
+
+            .check:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            .container input:checked ~ .check:after {
+                display: block;
+            }
+
+            .container .check:after {
+                top: 8px;
+                left: 8px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: white;
+            }
+            .expiry{
+                margin:70px
+            }
+            #expiry{
+              margin: 10px;
+              border: none;
+              border-bottom: 2px solid black;
            
+            }
+            #cvv{
+                border-bottom: 2px solid black;
+                
+            }
+            .placeorder{
+                 border:2px solid black;
+                 margin: 10px;
+                 padding: 5px;
+               
+            }
+
+
+          }
+           
+
+          @media all and (min-width: 480px) and (max-width: 900px)
+          {
+           
+
+                  
+                   *{
+                padding: 0px;
+                margin: 20px;
+                box-sizing: border-box;
+            }
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .check1 h4{
+                margin-top: 40px;
+                text-align: center;
+
+            }
+            .check1 p{
+                text-align: center;
+                font-size: 15px;
+            }
+            .column {
+                 float: left;
+                width: 200px;
+                padding: 10px;
+                height: 300px;
+                margin: 50px;
+
+               
+            }
+            .column h4{
+                margin-top: 60px;
+            }
+             .column form{
+                display: flex;
+             
+                flex-direction: column;
+                border: none;
+            } 
+            label{
+                margin-bottom: 5px;
+            }
+            input{
+                border: none;
+                border-bottom: 2px solid black;
+                width:200px;
+                margin-bottom: 10px;
+                
+            }
+            .column p{
+                margin-top: 10px;
+                text-align: left;
+            }
+            .code input{
+                
+                border: none;
+                border-bottom: 2px solid black;
+                width:150px;
+            }
+            .country {
+           border: none;
+           margin: 10px;
+           padding: 10px;
+        
+            }
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                font-size: 15px;
+                margin-top: 10px;
+            }
+
+
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .check {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 15px;
+                width: 15px;
+                background-color: lightgray;
+                border-radius: 50%;
+            }
+
+            .container:hover input ~ .check {
+                background-color: gray;
+            }
+
+            .container input:checked ~ .check {
+                background-color: blue;
+            }
+
+            .check:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            .container input:checked ~ .check:after {
+                display: block;
+            }
+
+            .container .check:after {
+                top: 8px;
+                left: 8px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: white;
+            }
+            .expiry{
+                margin:70px
+            }
+            #expiry{
+              margin: 10px;
+              border: none;
+              border-bottom: 2px solid black;
+           
+            }
+            #cvv{
+                border-bottom: 2px solid black;
+                
+            }
+            .placeorder{
+                 border:2px solid black;
+                 margin: 10px;
+                 padding: 5px;
+               
+            }
+            footer{
+                  margin-top: 620px;
+                  margin-right: 200px;
+            }
+
+
+          }
                     
          
            
@@ -177,12 +460,12 @@
                         <label for="Postal Code">Postal Code</label>
                         <input type="text" id="Postal Code" name="Postal Code" />
                     </div>
-                    <label for="country" >Country</label>
+                    <label for="country">Country</label>
                     <select class="country" name="country">
-                        <option value="India">India</option>
-                        <option value="canada">canada</option>
-                        <option value="england">England</option>
-                        <option value="aus">Aus</option>
+                        <option value="India" name="country">India</option>
+                        <option value="canada" name="country">canada</option>
+                        <option value="england" name="country">England</option>
+                        <option value="aus" name="country">Aus</option>
                     </select>
                     <h4 style="margin-top: 20px;">Billing Address</h4>
                 <label class="container">Use different billing address
@@ -201,7 +484,7 @@
                     <input type="number" id="Card Number" name="Card Number" />
 
                      <div>
-                    <label for="expiry">Expiry</label>
+                    <label for="expiry" class="expiry">Expiry</label>
                     <select name="expiry" id="expiry">
                         <option value="Jan">Jan</option>
                         <option value="Feb">Feb</option>
@@ -229,8 +512,8 @@
                      <option value="2026">2026</option>
                      <option value="2027">2027</option>
                     </select><br><br>
-                    <label for="CVV">CVV</label><br>
-                    <input type="number" id="cvv" name="CVV" />
+                    <label for="cvv">CVV</label><br>
+                    <input type="number" id="cvv" name="cvv" />
                     </div>
 
                     <div>
@@ -247,7 +530,7 @@
 
     <footer>
     
-        <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" target="_blank">Made by polymer</a></p>
+        <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/" >Made by polymer</a></p>
         <h4>Demo Only</h4>
     
     </footer>

@@ -19,7 +19,43 @@ h3 a{
    margin-top: 20px;
 
 }
+/* .checkbtn{
+   cursor: pointer;
+   display: none;
+   margin-left: 40px;
+} */
+#check{
+  /* display: none; */
+}
+#mobile-menu-btn {
+  display: none;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+#mobile-menu-btn:hover{
+       display: block;
+}
 
+.mobile-menu {
+  color: black;
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 60vh;
+  width: 70vw;
+  background-color:white;
+
+  
+}
+
+.mobile-menu ul{
+     
+}
+
+.mobile-menu ul li{
+   padding: 10px;
+   margin-right: 20px;
+}
 .container ul{
 list-style: none;
 margin: 0px;
@@ -37,15 +73,14 @@ margin: 0px;
     display: block;
     margin-bottom: 10px;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: lighter;
     text-align: center;
     color: black;
     margin: 15px;
+    flex-direction: column;
   
   }
-  .container a:hover{
-      border-bottom: 2px solid black ;
-  }
+  
 
       .img{
      padding: 0px;
@@ -75,18 +110,28 @@ margin: 0px;
        width: 50%;
        height: 500px;
        margin-top: 50px;
+       
+     }
+     .img6,h4{
+          font-weight: lighter;
      }
      .flex{
         display: flex;
+        
      }
      .flex ,.kidswear{
        text-align:center ;
+       font-weight: lighter;
      }
     
      
      .text{
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
+        
+     }
+     .text h4{
+      font-weight: lighter;
      }
      .button{
         background-color: white; /* Green */
@@ -98,6 +143,7 @@ margin: 0px;
         display: inline-block;
         font-size: 16px;
         margin: 10px;
+        width: 200px;
       }
      
      .button a{
@@ -115,7 +161,7 @@ margin: 0px;
          font-size: 25px;
          margin-right: 10px;
          color:black;
-
+        
     }
    
    .cart a:hover {
@@ -123,7 +169,7 @@ margin: 0px;
     color:white;
    } 
 
-.nitems ,.header,p{
+.nitems ,.header,h4,p{
     text-align: center;
 }
 
@@ -266,3 +312,7 @@ margin: 0px;
      text-decoration: none;
      
     }  
+
+
+
+    
