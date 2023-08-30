@@ -18,16 +18,38 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="">
 </head>
-
+<style>
+    /* @media all and (max-width: 480px)
+    {
+          #button1{
+            margin-left: 160px;
+            margin-right: 100px;
+        }
+        #button2{
+            margin-left: 160px;
+            margin-right: 100px;
+        } 
+        .mw{
+           margin-right: 140px;
+        }
+        .lw{
+              margin-right: 140px;
+        }
+        header,h3{
+            margin-right: 90px;
+        }
+    }
+     */
+  </style>  
 <body>
     <div>
         <header>
             <h3><a href="index.html">S H O P</a></h3>
-            <li class="cart"><a href="cartitems.html "><i class="fas fa-shopping-cart"></i></a></li>
+       
         </header>
         <nav class="container">
             <div class="links">
-                <ul>
+                <ul id="links1">
                     <li class="current"><a href="mens_wear.html">Men's wear</a></li>
                     <li><a href="ladies_wear.html">Ladies wear</a></li>
                     <li><a href="mens_T_shirt.html">Men's T-Shirts</a></li>
@@ -51,26 +73,26 @@
         </div>
     </div>
     <div class="text">
-        <h4>Men's wear</h4>
-        <button class="button"><a href="mens_wear.html">SHOP NOW</a></button>
+        <h4 class="mw">Men's wear</h4>
+        <button type="button" class="button" id="button1"><a href="mens_wear.html">SHOP NOW</a></button>
     </div>
     <div class="img2">
         <img src="img/index img/img2.jpg" alt="" />
     </div>
     <div class="text">
-        <h4>Ladies wear</h4>
-        <button class="button"><a href="ladies_wear.html">SHOP NOW</a></button>
+        <h4 class="lw">Ladies wear</h4>
+        <button  type="button"class="button" id="button2"><a href="ladies_wear.html">SHOP NOW</a></button>
     </div>
     <div class="flex">
         <div class="img4">
             <img src="img/index img/img3.jpg" alt="" />
             <h4 class="kidswear">Men's T-Shirts</h4>
-            <button class="button"><a href="mens_T_shirt.html">SHOP NOW</a></button>
+            <button type="button "id="button3" class="button"><a href="mens_T_shirt.html">SHOP NOW</a></button>
         </div>
         <div class="img6">
             <img src="img/index img/img4.jpg" alt=""/>
             <h4>Ladies T-Shirts</h4>
-            <button class="button"><a href="ladies_T_shirt.html">SHOP NOW</a></button>
+            <button class="button" id="button4"><a href="ladies_T_shirt.html">SHOP NOW</a></button>
         </div>
     </div>
     </div>

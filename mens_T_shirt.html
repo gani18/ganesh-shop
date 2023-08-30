@@ -18,16 +18,92 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="">
 </head>
+<style>
+    @media all and (min-width: 300px) and (max-width: 480px) {
+        .links1 {
+            display: none;
+        }
+
+        .products .card img {
+            height: 150px;
+            width: 120px;
+            margin-left: 75px;
+
+
+        }
+
+        .products .card .desc {
+            padding: 10px;
+
+            opacity: 0.8;
+
+        }
+
+        .header,
+        h4,
+        p {
+            margin-left: 100px;
+        }
+
+        .desc {
+
+            text-align: center;
+            font-weight: bold;
+            font-size: 10px;
+            margin-right: 250px;
+        }
+
+        .price {
+            margin-left: 50px;
+        }
+
+        .cart,
+        fas fa-shopping-cart {}
+
+
+
+        .products,
+        .product {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                grid-template-rows: 300px;
+               grid-column-gap: 30px;
+    
+  
+        }
+
+        #in {
+            display: none;
+        }
+
+        header,
+        h3 {
+            text-align: center;
+            margin-left: 110px;
+        }
+        #mt{
+           display: none;
+        }
+      
+        .nitems,h4,p{
+         
+            margin-left: 100px;
+        }
+       #mobile-menu-btn,i{
+         margin-left: 50px;
+       }
+    }
+</style>
 
 <body>
     <div>
         <header>
             <h3><a href="index.html">S H O P</a></h3>
-            <li class="cart"><a href="cartitems.html "><i class="fas fa-shopping-cart"></i></a></li>
+          
         </header>
         <nav class="container">
             <div class="links">
-                <ul>
+                <ul id="links1">
                     <li class="current"><a href="mens_wear.html">Men's wear</a></li>
                     <li><a href="ladies_wear.html">Ladies wear</a></li>
                     <li><a href="mens_T_shirt.html">Men's T-Shirts</a></li>
@@ -47,7 +123,7 @@
             </ul>
         </div>
         <div class="img">
-            <img src="img/index img/img3.jpg" alt="error" />
+            <img src="img/index img/img3.jpg" alt="error" id="mt" />
         </div>
     </div>
     <div class="nitems">
@@ -61,7 +137,7 @@
                 <div class="img">
                     <img src="img/kids wear items/img50.jpg" alt="">
                     <div class="desc">
-                        YouTube Organic Cotton T-Shirt - Grey
+                        YouTube Organic  T-Shirt - Grey
                         <div class="title">
                             <div class="box">
                                 <div class="price">$50</div>
@@ -91,7 +167,7 @@
                 <div class="img">
                     <img src="img/kids wear items/img52.jpg" alt="">
                     <div class="desc">
-                        Adult Android Superhero T-Shirt
+                        Adult Superhero T-Shirt
                         <div class="title">
                             <div class="box">
                                 <div class="price">$50</div>
@@ -106,7 +182,7 @@
                 <div class="img">
                     <img src="img/kids wear items/img53.jpg" alt="">
                     <div class="desc">
-                        Men's Vintage Heather T-Shirt
+                        Men's  Heather T-Shirt
                         <div class="title">
                             <div class="box">
                                 <div class="price">$50</div>
@@ -166,7 +242,7 @@
                 <div class="img">
                     <img src="img/kids wear items/img56.jpg" alt="">
                     <div class="desc">
-                        Android Ringspun T-Shirt - Green
+                        Android Ringspun T-Shirt
                         <div class="title">
                             <div class="box">
                                 <div class="price">$50</div>
@@ -181,7 +257,7 @@
                 <div class="img">
                     <img src="img/kids wear items/img57.jpg" alt="">
                     <div class="desc">
-                        Organic Cotton Android walking with dog T-shirt
+                        Organic Cotton T-shirt
                         <div class="title">
                             <div class="box">
                                 <div class="price">$50</div>
@@ -196,7 +272,7 @@
                 <div class="img">
                     <img src="img/kids wear items/img58.jpg" alt="">
                     <div class="desc">
-                        Organic Cotton T-Shirt - Red
+                        Organic  T-Shirt - Red
                         <div class="title">
                             <div class="box">
                                 <div class="price">$50</div>
@@ -271,7 +347,7 @@
                 <div class="img">
                     <img src="img/kids wear items/img63.jpg" alt="">
                     <div class="desc">
-                        Heather Pocket Tee - Light Blue
+                        Heather  - Light Blue
                         <div class="title">
                             <div class="box">
                                 <div class="price">$50</div>

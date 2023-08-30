@@ -52,6 +52,9 @@
       left: 0;
     }
   }
+  img{
+
+  }
 
 }
 
@@ -64,6 +67,12 @@
   nav p {
     display: none;
   }
+ 
+  #links1{
+    display: none;
+  }
+
+  
 
   .mobile-menu {
     display: none;
@@ -162,9 +171,13 @@
        width: 200px;
        height: 250px;
      }
+    
+     
+    
+   
 }
 
-@media all and (max-width: 480px) {
+@media all and (min-width: 300px) and (max-width: 480px) {
   nav ul li a {
     font-size: 16px;
 
@@ -205,7 +218,8 @@
   .products,
   .product {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+
   }
 
   .products .card {
@@ -214,13 +228,14 @@
   }
 
   .products .card img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
 
   .products .card .desc {
     padding: 5px 10px;
     opacity: 0.8;
+    
 
   }
 
@@ -264,20 +279,83 @@
            width: 300px;
            height: 200px;
          }
+         .button{
+           margin: 10px;
+         }
+        .img2{
+                     width: 550px;
+        }
+        .img{
+                 width:550px;
+        }
+        .flex{
+        display: flex;
+        width: 550px;
+        }
+        .img4{
+            width: 320px;
+            
+        }
+        .img6{
+                width: 320px;
+              
+        }
+       
+        
+        .button{
+           font-size: 15px;
+           width: 160px;
+           margin-left: 30px
+        }
+        #button1{
+            margin-left: 190px;
+            margin-right: 20px;
+        }
+        #button2{
+            margin-left: 190px;
+            margin-right: 20px;
+        } 
+        .mw{
+             margin-left: 250px; 
+          
+        }
+        .lw{
+         margin-left: 250px;
+       
+        }
+      #links1{
+            display: none;
+      } 
+      .text,.button{
+          justify-content: center;
+           text-align:center;
+      }
+             header,
+             h3 {
+               margin-left: 120px;
+               
+             }
+
+             footer,h4,p{
+             margin-left: 70px;
+             
+             }
+             #button3{
+               margin-left: 50px;
+             }
+             #button4{
+              margin-left: 70px;
+             }
+             .img,h4{
+               margin-right: 30px;
+             }
+     
 }
-
-
+      
 /* Portrait */
 @media all and (orientation:portrait) {
   /* Portrait styles here */
-    .price {
-        text-align: center;
-        margin-left: 35px;
-        margin-bottom: 30px;
-        font-size: 20px
-      }
-}
-
+   
 
 /* Landscape */
 @media screen and (orientation:landscape) {
