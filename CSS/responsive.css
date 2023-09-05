@@ -52,9 +52,8 @@
       left: 0;
     }
   }
-  img{
 
-  }
+  img {}
 
 }
 
@@ -67,12 +66,12 @@
   nav p {
     display: none;
   }
- 
-  #links1{
+
+  #links1 {
     display: none;
   }
 
-  
+
 
   .mobile-menu {
     display: none;
@@ -147,37 +146,37 @@
     margin-bottom: 100px;
     font-size: 30px;
   }
-  
-         .column {
-           float: left;
-           width: 200px;
-           padding: 10px;
-           height: 300px;
-         }
-    
-         .column img {
-           width: 200px;
-           height: 100px;
+
+  .column {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 300px;
+  }
+
+  .column img {
+    width: 200px;
+    height: 100px;
+  }
+
+  .column {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 700px;
+  }
+
+  .column img {
+    width: 200px;
+    height: 250px;
+  }
+
+
 }
 
-     .column {
-       float: left;
-       width: 200px;
-       padding: 10px;
-       height: 700px;
-     }
-  
-     .column img {
-       width: 200px;
-       height: 250px;
-     }
-    
-     
-    
+
+@media all and (min-width: 280px) and (max-width: 480px) {
    
-}
-
-@media all and (min-width: 300px) and (max-width: 480px) {
   nav ul li a {
     font-size: 16px;
 
@@ -188,6 +187,7 @@
     display: block;
 
   }
+  
 
   ul {
 
@@ -215,12 +215,16 @@
     left: 0;
   }
 
-  .products,
-  .product {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-
-  }
+    .products,
+    .product {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+     column-gap: 85px;
+     margin: 70px 0 0 0;
+    }
+    #in{
+     display: none;
+    }
 
   .products .card {
     padding: 3px;
@@ -228,314 +232,183 @@
   }
 
   .products .card img {
-    height: 100px;
-    width: 100px;
+    max-height: 190px;
+     max-width: 200px;
+  margin-left: 120px;  
+  margin-right: 70px;
+  
+ 
   }
 
   .products .card .desc {
     padding: 5px 10px;
     opacity: 0.8;
-    
+  font-size: 12px;
+  margin-left: 120px;
+  margin-right: 50px;
+  
 
+  
   }
 
   .products .card .box .price {
-
-    font-size: 20px;
     font-weight: lighter;
-
-  }
-
-  .price {
-    text-align: center;
-    margin-left: 35px;
     margin-bottom: 30px;
-    font-size: 20px
+    font-size: 11px;
+    margin-left: 40px;
   }
 
-    #mobile-menu-btn {
-      display: block;
-    }
-  
-    nav p {
-      display: none;
-    }
-  
-    .mobile-menu {
-      display: none;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
+  #mobile-menu-btn {
+    display: block;
+  }
 
-         .column {
-           float: left;
-           width: 200px;
-           padding: 10px;
-           height: 700px;
+  nav p {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .column {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 700px;
+  }
+
+  .column img {
+    width: 300px;
+    height: 200px;
+  }
+
+
+  
+     .nitems,
+     .itemsname,
+     p {
+       margin-left: 120px;
+      
+     }
+  
+      footer,.mp
+      {
+       margin-left: 40px;
+      
+     }
+  
+     header,.shop{
+      margin-left: 25px;
+     }
+
+ 
+
+   #links1 {
+    display: none;
+  }
+
+  .text,
+  .button {
+    justify-content: center;
+    text-align: center;
+  }
+  header,h3{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    align-items: center;
+  }
+  .img{
+    min-width: 360px;
+    object-fit: cover;
+    
+   
+    }
+    .img2{
+    min-width: 360px;
+      object-fit: cover;
+    }
+         .img5 {
+           width: 50%;
+          
          }
     
-         .column img {
-           width: 300px;
-           height: 200px;
-         }
-         .button{
-           margin: 10px;
-         }
-        .img2{
-                     width: 550px;
-        }
-        .img{
-                 width:550px;
-        }
-        .flex{
-        display: flex;
-        width: 550px;
-        }
-        .img4{
-            width: 320px;
-            
-        }
-        .img6{
-                width: 320px;
-              
-        }
-       
-        
-        .button{
-           font-size: 15px;
-           width: 160px;
-           margin-left: 30px
-        }
-        #button1{
-            margin-left: 190px;
-            margin-right: 20px;
-        }
-        #button2{
-            margin-left: 190px;
-            margin-right: 20px;
-        } 
-        .mw{
-             margin-left: 250px; 
+         .img6 {
+           width: 50%;
           
-        }
-        .lw{
-         margin-left: 250px;
-       
-        }
-      #links1{
-            display: none;
-      } 
-      .text,.button{
-          justify-content: center;
-           text-align:center;
-      }
-             header,
-             h3 {
-               margin-left: 120px;
-               
-             }
+           
+         }    
+                  .flex {
+             display: flex;
+            justify-content: space-evenly;
+            min-width: 360px;
+               }
+              
 
-             footer,h4,p{
-             margin-left: 70px;
-             
-             }
-             #button3{
-               margin-left: 50px;
-             }
-             #button4{
-              margin-left: 70px;
-             }
-             .img,h4{
-               margin-right: 30px;
-             }
-     
-}
-      
+              #button1{
+                    width:  160px;
+                      height: 50px;
+                    margin-left: 55px;
+               }
+              #button2{
+                width: 160px;
+                  height: 50px;
+                  margin-left: 55px;
+                  
+              }
+              .mw{
+              margin-left: 55px;
+              }
+              .lw{
+                margin-left: 55px;
+              }
+                    #button3 {
+                    width: 160px;
+                    }
+                    #button4 {
+                      width: 160px;
+                       
+                      }
+                      .button{
+                         text-align: center;
+                      }
+                                
+                    }
+    
+
 /* Portrait */
 @media all and (orientation:portrait) {
   /* Portrait styles here */
-   
-
-/* Landscape */
-@media screen and (orientation:landscape) {
-  /* Landscape styles here */
 }
 
-
-/* CSS for iPhone, iPad, and Retina Displays */
-
-/* Non-Retina */
-@media screen and (-webkit-max-device-pixel-ratio: 1) {}
-
-/* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {}
-
-/* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation:portrait) {
-  nav ul li a {
-    font-size: 16px
+  /* Landscape */
+  @media screen and (orientation:landscape) {
+    /* Landscape styles here */
   }
 
-  .checkbtn {
-    display: block;
-  }
+
+  /* CSS for iPhone, iPad, and Retina Displays */
+
+  /* Non-Retina */
+  @media screen and (-webkit-max-device-pixel-ratio: 1) {}
+
+  /* Retina */
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {}
+
+  /* iPhone Portrait */
  
+  /* iPhone Landscape */
+  @media screen and (max-device-width: 480px) and (orientation:landscape) {}
 
-  ul {
-
-    top: 80px;
-    left: -100;
-    transition: all .5s;
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-  }
-
-  nav ul li a {
-    font-size: 20px;
-  }
-
-  a:hover,
-  a.active {
-    background: none;
-  }
-
-  .products,
-  .product {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .products .card {
-    padding: 3px;
+  /* iPad Portrait */
+  @media screen and (min-device-width: 481px) and (orientation:portrait) {
 
   }
-
-  .products .card img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .products .card .desc {
-    padding: 10px 10px;
-    opacity: 0.8;
-    margin-left: 20px;
-
-  }
-
-  .products .card .box .price {
-
-    font-size: 20px;
-    font-weight: lighter;
-
-  }
-
-  .price {
-    text-align: center;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    font-size: 30px;
-  }
-}
-
-/* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation:landscape) {}
-
-/* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation:portrait) {
-
-  nav ul li a {
-    font-size: 16px
-  }
-
-  .checkbtn {
-    display: block;
-  }
-
-  ul {
-
-    top: 80px;
-    left: -100;
-    transition: all .5s;
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-  }
-
-  nav ul li a {
-    font-size: 20px;
-  }
-
-  a:hover,
-  a.active {
-    background: none;
-  }
-
-  .products,
-  .product {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .products .card {
-    padding: 3px;
-
-  }
-
-  .products .card img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .products .card .desc {
-    padding: 10px 10px;
-    opacity: 0.8;
-    margin-left: 20px;
-
-  }
-
-  .products .card .box .price {
-
-    font-size: 20px;
-    font-weight: lighter;
-
-  }
-
-  .price {
-    text-align: center;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    font-size: 30px;
-  }
-
-    #mobile-menu-btn {
-      display: block;
-    }
-
-    #mobile-menu-btn:over{
-         display: block;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    .mobile-menu {
-      display: none;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-}
-
-
-/* iPad Landscape */
-@media screen and (min-device-width: 481px) and (orientation:landscape) {}
+  /* iPad Landscape */
+  @media screen and (min-device-width: 481px) and (orientation:landscape) {}

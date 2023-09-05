@@ -16,80 +16,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=uXKZ2l1EEvzE&format=png">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=uXKZ2l1EEvzE&format=png">
 </head>
-
-    <style>
-       @media all and (min-width: 300px) and (max-width: 480px) 
-          {
-            .links1{
-                  display: none;
-            }
-             .products .card img{
-         height:150px;
-         width:120px;
-       margin-left: 75px;
-   
-         
-    } 
-   .products .card .desc {
-              padding:10px;
-           
-              opacity:0.8;
-             
-    }
-    .header,h4,p{
-     margin-left: 100px;
-    }
-    .desc{
-         
-       text-align: center;
-        font-weight: bold;
-        font-size: 10px;
-        margin-right:260px;
-      
-        
-        
-    }
-    .price{
-      margin-left: 50px;
-    }
-    .cart,fas fa-shopping-cart{
-       
-    }
-  
-    
-   
-     .products,
-  .product {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    grid-template-rows: 300px;
-    grid-column-gap: 30px;
-    
-  
-  }
-     #in{
-     display: none;
+<style>
+     @media all and (min-width: 280px) and (max-width: 480px){
+        .shop1{
+          margin-left: 220px;
+        }
+        footer,.mp,.do{
+                    margin-left: 120px;
+                    text-align: justify;
+        }
      }
-     header,h3{
-    text-align: center;
-    margin-left: 110px;
-     }
-     footer,p,h4{
-            margin-left: 70px;
-     }
-          }
-          
-
-    </style>
-
+</style>
 
 <body>
     <div>
         <header>
-            <h3><a href="index.html">S H O P</a></h3>
-         
+            <h3 class="shop1"><a href="index.html">S H O P</a></h3>
+
         </header>
         <nav class="container">
             <div class="links">
@@ -113,11 +58,11 @@
             </ul>
         </div>
         <div class="img">
-            <img src="img/index img/img1.jpg" alt="ga" id="in"/>
+            <img src="img/index img/img1.jpg" alt="ga" id="in" />
         </div>
         <div class="nitems">
             <div class="header">
-                <h4>Men's wear </h4>
+                <h4 class="itemsname">Men's wear </h4>
                 <p>(20 items)</p>
             </div>
         </div>
@@ -158,7 +103,7 @@
                     <div class="img">
                         <a href="product_details.html"><img src="img/mens wear items/img11.jpg" alt=""></a>
                         <div class="desc">
-                            <a href="product_details.html">Green Flex  Zip Hoodie</a>
+                            <a href="product_details.html">Green Flex Zip Hoodie</a>
                             <div class="title">
                                 <div class="box">
                                     <div class="price">$50</div>
@@ -188,7 +133,7 @@
                     <div class="img">
                         <img src="img/mens wear items/img13.jpg" alt="">
                         <div class="desc">
-                            YouTube Ultimate Hooded 
+                            YouTube Ultimate Hooded
                             <div class="title">
                                 <div class="box">
                                     <div class="price">$50</div>
@@ -278,7 +223,7 @@
                     <div class="img">
                         <img src="img/mens wear items/img19.jpg" alt="">
                         <div class="desc">
-                            Eco-Jersey  Zip Up Hoodie
+                            Eco-Jersey Zip Up Hoodie
                             <div class="title">
                                 <div class="box">
                                     <div class="price">$50</div>
@@ -367,8 +312,8 @@
         </section>
     </div>
     <footer>
-        <p><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/">Made by polymer</a></p>
-        <h4>Demo Only</h4>
+        <p class="mp"><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/">Made by polymer</a></p>
+        <h4 class="do">Demo Only</h4>
     </footer>
 </body>
 
