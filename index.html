@@ -20,7 +20,17 @@
 </head>
 
  
-  </style>  
+  <style>
+    @media all and (min-width: 280px) and (max-width: 480px) {
+             #footer1,
+                      .mp,
+                  .demo {
+                    margin-left:40px ;
+                  
+                                             }
+ 
+    }
+  </style>
 <body>
     <div>
         <header>
@@ -76,10 +86,10 @@
         </div>
     </div>
     </div>
-    <footer>
+    <footer id="footer1">
         
         <p class="mp"><a rel="noopener" href="https://polymer-library.polymer-project.org/3.0/docs/apps/" target="_blank">Made by polymer</a></p>
-        <h4 id="do">Demo Only</h4>
+        <h4  class="demo">Demo Only</h4>
         
     </footer>
 </body>

@@ -290,9 +290,10 @@
              margin-right: 160px;
         }
     }
-
-    @media all and (min-width: 480px) and (max-width: 900px) {
-        * {
+    @media all and (min-width: 768px) and (max-width: 1024px)
+    
+    {
+       * {
             padding: 0px;
             margin: 20px;
             box-sizing: border-box;
@@ -337,7 +338,7 @@
         input {
             border: none;
             border-bottom: 2px solid black;
-            width: 200px;
+            width: 250px;
             margin-bottom: 10px;
         }
 
@@ -432,8 +433,158 @@
         }
 
         footer {
-            margin-top: 620px;
+            margin-top: 660px;
             margin-right: 200px;
+            margin-left: 200px;
+        
+        }  
+    }
+    
+    @media all and (min-width: 480px) and (max-width: 900px) {
+        * {
+            padding: 0px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .check1 h4 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .check1 p {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .column {
+            float: left;
+            width: 200px;
+            padding: 10px;
+            height: 300px;
+            margin: 50px;
+        }
+
+        .column h4 {
+            margin-top: 60px;
+        }
+
+        .column form {
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input {
+            border: none;
+            border-bottom: 2px solid black;
+            width: 250px;
+            margin-bottom: 10px;
+        }
+
+        .column p {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .code input {
+            border: none;
+            border-bottom: 2px solid black;
+            width: 150px;
+        }
+
+        .country {
+            border: none;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .check {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: lightgray;
+            border-radius: 50%;
+        }
+
+        .container:hover input~.check {
+            background-color: gray;
+        }
+
+        .container input:checked~.check {
+            background-color: blue;
+        }
+
+        .check:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .container input:checked~.check:after {
+            display: block;
+        }
+
+        .container .check:after {
+            top: 8px;
+            left: 8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .expiry {
+            margin: 70px
+        }
+
+        #expiry {
+            margin: 10px;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+        #cvv {
+            border-bottom: 2px solid black;
+        }
+
+        .placeorder {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        footer {
+            margin-top: 660px;
+            margin-right: 200px;
+            margin-left: 200px;
+        
         }
     }
     @media all and (min-width: 280px) and (max-width: 480px)
@@ -441,22 +592,32 @@
           input {
             border: none;
             border-bottom: 2px solid black;
-            width: 250px;
+            min-width: 200px;
             margin-bottom: 10px;
-        }
-        
-        footer ,.mp,do{
-            margin-top: 1450px;
            
-        
         }
+        
+       
+        .check1,p{
+        margin-right: 40px;
+        }
+        .co{
+      margin-left: 90px;
+        }
+      
      
      header,.shop6 {
-       margin-left: 25px;
-       
+       margin-left: 25px;  
        margin-right: 5px;
      }
-
+     footer{
+        
+         display: none;
+     }
+     .demo{
+    margin-left: 110px;
+     }
+    
    }
 </style>
 <link rel="stylesheet" href="./css/style.css">
@@ -477,7 +638,7 @@
         </header>
     </div>
     <div class="check1">
-        <h4>Checkout</h4>
+        <h4 class="co">Checkout</h4>
         <p>Shop is a demo app - form data will not be sent</p>
     </div>
     <div class="row">
@@ -488,7 +649,7 @@
                 <input type="email" id="email" name="email" />
                 <label for="Phone Number">Phone Number</label>
                 <input type="number" id="Phone Number" name="Phone Number" />
-                <p><b>Shipping Address</b></p>
+                <p class="sa"><b>Shipping Address</b></p>
                 <label for="Address">Address</label>
                 <input type="textarea" id="Address" name="Address" />
                 <label for="City">City</label>
@@ -558,9 +719,9 @@
             </form>
         </div>
     </div>
-    <footer>
-    <p class="mp"><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/">Made by polymer</a></p>
-        <h4 class="d0">Demo Only</h4>
+    <footer >
+    <p id="mbp"><a href="https://polymer-library.polymer-project.org/3.0/docs/apps/">Made by polymer</a></p>
+        <h4 class="demo" >Demo Only</h4>
     </footer>
 </body>
 

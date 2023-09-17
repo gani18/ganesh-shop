@@ -219,8 +219,8 @@
     .product {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
-     column-gap: 85px;
-     margin: 70px 0 0 0;
+      column-gap: 85px;
+ 
     }
     #in{
      display: none;
@@ -232,11 +232,10 @@
   }
 
   .products .card img {
-    max-height: 190px;
-     max-width: 200px;
-  margin-left: 120px;  
-  margin-right: 70px;
-  
+    height: 200px;
+     width: 200px;
+     margin: 50px 30px 20px 60px;
+     
  
   }
 
@@ -244,8 +243,6 @@
     padding: 5px 10px;
     opacity: 0.8;
   font-size: 12px;
-  margin-left: 120px;
-  margin-right: 50px;
   
 
   
@@ -255,7 +252,7 @@
     font-weight: lighter;
     margin-bottom: 30px;
     font-size: 11px;
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
   #mobile-menu-btn {
@@ -294,11 +291,7 @@
       
      }
   
-      footer,.mp
-      {
-       margin-left: 40px;
-      
-     }
+    
   
      header,.shop{
       margin-left: 25px;
@@ -375,7 +368,17 @@
                       .button{
                          text-align: center;
                       }
-                                
+                       .shop1 {
+                        margin-left: 210px;
+                      
+                       }
+                      
+                     #footer,
+                      .mp,
+                  .do {
+                    margin-left:110px ;
+                  
+                                             }
                     }
     
 
